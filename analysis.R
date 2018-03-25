@@ -431,7 +431,7 @@ comments_analysis %>%
   theme(legend.position = 'none',
         axis.text=element_text(size=12),
         axis.title=element_text(size=14,face="bold")) +
-  ggsave("gg_emotionlevel.png", width = 10, height = 6.6)
+  ggsave("emotionlevel.png", width = 10, height = 6.6)
 
   # plot by type (main comment or reply)
 comments_analysis %>%
@@ -469,7 +469,7 @@ comments_analysis %>%
   theme(legend.position = 'none',
         axis.text=element_text(size=12),
         axis.title=element_text(size=14,face="bold")) +
-  ggsave("gg_emotionlevel_by_likes.png", width = 10, height = 6.6)
+  ggsave("emotionlevel_by_likes.png", width = 10, height = 6.6)
 
 # final plot
 grouped_reactions <- reactions %>%
@@ -497,4 +497,4 @@ comments_analysis %>%
   theme(legend.position = 'none',
         axis.text=element_text(size=12),
         axis.title=element_text(size=14,face="bold")) +
-  ggsave("gg_emotionlevel_total.png", width = 10, height = 6.6)
+  ggsave("emotionlevel_total.png", width = 10, height = 6.6)
